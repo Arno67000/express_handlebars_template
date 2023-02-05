@@ -1,0 +1,32 @@
+{
+    "name": "express_handlebars_template",
+    "version": "1.0.0",
+    "main": "app.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "yarn clean && tsc && yarn copyViews && yarn copyStatics",
+        "clean": "rimraf ./build",
+        "copyViews": "copyfiles -f src/views/** out build/views && copyfiles -f src/views/layouts/** out build/views/layouts",
+        "copyStatics": "copyfiles -f src/static/fonts/** out build/static/fonts && copyfiles -f src/static/style/** out build/static/style && copyfiles -f src/static/images/** out build/static/images",
+        "format": "eslint . --ext .ts --fix",
+        "lint": "eslint . --ext .ts",
+        "sass": "sass --watch src/sass/main.scss:src/static/style/style.css",
+        "start": " yarn build && node ./build/app.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "express-handlebars": "^6.0.7",
+        "serve-static": "^1.15.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@typescript-eslint/eslint-plugin": "^5.50.0",
+        "@typescript-eslint/parser": "^5.50.0",
+        "copyfiles": "^2.4.1",
+        "eslint": "^8.33.0",
+        "rimraf": "^4.1.2",
+        "sass": "^1.58.0",
+        "typescript": "^4.9.5"
+    }
+}

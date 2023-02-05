@@ -1,0 +1,18 @@
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: $TABLE_BORDER;
+    width: 100%;
+    text-align: left;
+}
+th {
+    font-weight: bolder;
+    color: $TABLE_COLOR;
+    padding-left: $TABLE_PADDING;
+}
+td {
+    padding-left: $TABLE_PADDING;
+}
+tbody {
+    border: $TABLE_BORDER;
+}

@@ -1,0 +1,53 @@
+/* VARIABLES, MIXINS, KEYFRAMES */
+/* BASIC STYLES */
+/* FONTS */
+@font-face {
+  font-family: "laconic";
+  src: url("../fonts/Laconic_Regular.otf");
+}
+html body {
+  height: 99vh;
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: laconic, Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* COMPONENTS STYLES */
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: inset 2px blanchedalmond;
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  font-weight: bolder;
+  color: blanchedalmond;
+  padding-left: 1.5%;
+}
+
+td {
+  padding-left: 1.5%;
+}
+
+tbody {
+  border: inset 2px blanchedalmond;
+}
+
+/* LAYOUTS STYLES */
+
+/*# sourceMappingURL=style.css.map */

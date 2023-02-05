@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>This is the base template for an express application serving static
+        files</h1>
+    {{#items}}
+        <table>
+            <thead>
+                <tr>
+                    <th>{{name}}</th>
+                    <th>{{description}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#subfolders}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{description}}</td>
+                    </tr>
+                {{/subfolders}}
+            </tbody>
+        </table>
+    {{/items}}
+</div>
